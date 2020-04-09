@@ -1,4 +1,4 @@
-package com.tactfactory.monprojetsb.monprojetsb.entities;
+package com.tactfactory.monprojetsb.entities;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.tactfactory.monprojetsb.monprojetsb.controller;
+package com.tactfactory.monprojetsb.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -8,14 +8,14 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.tactfactory.monprojetsb.monprojetsb.entities.Product;
-import com.tactfactory.monprojetsb.monprojetsb.entities.User;
-import com.tactfactory.monprojetsb.monprojetsb.repositories.ProductRepository;
-import com.tactfactory.monprojetsb.monprojetsb.repositories.UserRepository;
+import com.tactfactory.monprojetsb.entities.Product;
+import com.tactfactory.monprojetsb.entities.User;
+import com.tactfactory.monprojetsb.repositories.ProductRepository;
+import com.tactfactory.monprojetsb.repositories.UserRepository;
 
 
 @Controller
-@RequestMapping("/api")
+@RequestMapping(value = {"/product"})
 public class ProductController {
 	
 	@Autowired
@@ -48,6 +48,7 @@ public class ProductController {
 		}
 		return "redirect:index";
 	}
+	
 	
 	public void delete() {
 		
